@@ -88,7 +88,6 @@ button {
   text-decoration: none;
   display: flex;
   align-items: center;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -136,11 +135,7 @@ button {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-
   background-color: var(--accent-color);
-}
-.hover-line {
-  text-decoration: none;
 }
 
 .header-section-address-logo {
@@ -199,7 +194,6 @@ button {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  /* изменить тут марджин боттом перебвиает маржин авто*/
 }
 .button.primary {
   font-family: "Roboto";
@@ -227,7 +221,6 @@ button {
   height: 100%;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.06);
-
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,11 +247,9 @@ button {
   top: 8px;
   right: 8px;
   color: var(--title-text-color);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -324,8 +315,7 @@ button {
   align-items: center;
   border-radius: 4px;
 }
-.icon-advantages {
-}
+
 /* Title secondary-Our works*/
 
 .work {
@@ -346,15 +336,12 @@ button {
   bottom: 0;
   width: 100%;
   height: 70px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-
   color: var(--maket-color);
   background-color: var(--work-bg);
 }
@@ -369,8 +356,7 @@ button {
 }
 
 /* Team*/
-.container {
-}
+
 .section-team {
   background: #f5f4fa;
 }
@@ -430,7 +416,6 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   color: #afb1b8;
 
   transition-property: color, background-color;
@@ -523,6 +508,9 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-footer:hover,
 .address-footer:focus {
@@ -535,6 +523,9 @@ button {
   color: var(--maket-color);
   text-decoration: none;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address-footer:hover,
 .link-address-footer:focus {
@@ -550,19 +541,20 @@ button {
 }
 .social-footer {
   display: flex;
-
   gap: 10px;
 }
 .social-link-footer {
   display: flex;
   justify-content: center;
-
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff1a;
   fill: currentColor;
+  transition-property: background color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -637,13 +629,10 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   transform: translateY(101%);
   opacity: 0;
-
   transition-property: transform, opacity;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -655,11 +644,9 @@ button {
 }
 .portfolio-descr {
   padding: 63px 24px;
-
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-
   color: var(--maket-color);
   background-color: rgba(33, 149, 243, 0.781);
 }
@@ -686,16 +673,4 @@ button {
 
 .portfolio-element {
   position: relative;
-}
-.portfolio-element:hover .detailes-description {
-  display: block;
-}
-.detailes-description {
-  margin: 0;
-  padding: 0;
-  color: blueviolet;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  outline: 5px solid #2196f3;
 }
