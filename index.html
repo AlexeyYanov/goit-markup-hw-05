@@ -28,7 +28,13 @@
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Студія</a>
+              <ul>
+                <li class="hover-line">
+                  <img src="./images/hover-line1.jpg" width="48" height="4" />
+                </li>
+              </ul>
             </li>
+
             <li class="item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
@@ -58,9 +64,21 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero-container container">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary">Замовити послугу</button>
+          <button data-modal-open type="button" class="button primary">
+            Замовити послугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <button data-modal-close class="close-button">
+                <svg class="header-section-address-logo" width="10" height="16">
+                  <use href="./images/icons-new.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -494,7 +512,8 @@
               <a
                 class="client-link link"
                 href="#"
-                target="_blank"section-our-clients
+                target="_blank"
+                section-our-clients
                 rel="noopener norefference"
                 aria-label="client logo"
               >
@@ -601,5 +620,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
