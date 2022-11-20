@@ -21,37 +21,48 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a class="logo">Web<span class="logo-header">Studio</span></a>
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-header">Studio</span></a
+        >
         <nav class="section-works-header">
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="site-item">
+              <a href="./index.html" class="site-link link">Студія</a>
             </li>
-            <li><a href="#" class="link">Контакти</a></li>
+
+            <li class="site-item">
+              <a href="./portfolio.html" class="site-link link current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-item">
+              <a href="#" class="site-link link">Контакти</a>
+            </li>
           </ul>
         </nav>
+
         <ul class="list address-header">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link-address" lang="en"
-              ><svg class="header-section-address-logo" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="link-address" lang="en">
+              <svg class="header-section-address-logo" width="16" height="12">
                 <use href="./images/icons-new.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link-address"
-              ><svg class="header-section-address-logo" width="10" height="16">
-                <use href="./images/icons-new.svg#icon-smartphone"></use></svg
-              >+380961111111</a
+          <li class="item">
+            <a href="tel:+380961111111" class="link-address">
+              <svg class="header-section-address-logo" width="10" height="16">
+                <use href="./images/icons-new.svg#icon-smartphone"></use>
+              </svg>
+              +380961111111</a
             >
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section>
+      <section class="section">
         <div class="container">
           <h1 class="pattern-hidden">Наші переваги</h1>
           <ul class="portfolio-buttons list">
@@ -73,27 +84,31 @@
           </ul>
           <ul class="examples-list list">
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
-                <img
-                  src="./images/technokryak.jpg"
-                  alt="Фото главной страницы сайта Технокряк"
-                  width="370"
-                  height="274"
-                />
+              <a href="#" class="portfolio-link link">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/technokryak.jpg"
+                    alt="Фото главной страницы сайта Технокряк"
+                    width="370"
+                    height="274"
+                  />
+                  <div class="portfolio-wrap">
+                    <p class="portfolio-descr">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
                 <div class="examples-site-and-description">
                   <h2 class="section-title-product">Технокряк</h2>
                   <p class="description-product">Веб-сайт</p>
                 </div>
               </a>
-              <div class="detailes-description">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Praesentium, tempore.
-                </p>
-              </div>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/poster-neworlean.jpg"
                   alt="Фото главной страницы сайта Нью-Орлеан"
@@ -109,7 +124,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/seafood-restaurant.jpg"
                   alt="Фото главной страницы приложения"
@@ -123,7 +138,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/project-prime.jpg"
                   alt="Фото главной страницы"
@@ -137,7 +152,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/boxes.jpg"
                   alt="Фото главной страницы приложения"
@@ -151,7 +166,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/inspiration.jpg"
                   alt="Фото главной страницы сайта"
@@ -167,7 +182,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/limited-edition.jpg"
                   alt="Фото главной страницы"
@@ -181,7 +196,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/lab.jpg"
                   alt="Фото главной страницы"
@@ -195,7 +210,7 @@
               </a>
             </li>
             <li class="portfolio-element">
-              <a href="#" class="portfolio-link">
+              <a href="#" class="portfolio-link link">
                 <img
                   src="./images/growbusiness.jpg"
                   alt="Фото главной страницы"
